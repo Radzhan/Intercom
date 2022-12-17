@@ -7,11 +7,9 @@ const PaswordPanel = () => {
     const counterForClass = useSelector((state: RootState) => state.password.arrForClass);
     const counterValue = useSelector((state: RootState) => state.password.value);
     let simbolForPassword = '';
-    let forClass = '';
     
     for (let i = 0; i < counterValue.length; i++){
         simbolForPassword += '*'
-        forClass += counterValue[i]
     }
 
     

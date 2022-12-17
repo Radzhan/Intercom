@@ -30,12 +30,12 @@ export const counterSlice = createSlice({
             state.value.forEach(item => {
                 check += item
             })
-            if (check === '2042') {
+            if (check === Password) {
                 alert('Access Granted')
                 state.arrForClass = ['panel' , 'green']
                 state.value = []
                 check = ''
-            } else if (check !== '2042'){ 
+            } else if (check !== Password){ 
                 alert('Access Denied')
                 state.arrForClass = ['panel' , 'red']
                 state.value = []
